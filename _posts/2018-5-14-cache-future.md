@@ -1,6 +1,6 @@
 ---
-layout post
-title Cache the sfuture with service worker
+layout: post
+title: Cache the sfuture with service worker
 date:       2015-05-14
 summary:    Cache the sfuture with service worker.
 categories: jekyll pixyll
