@@ -1,5 +1,5 @@
 ---
-layout single
+layout post
 title Cache the sfuture with service worker
 ---
 
