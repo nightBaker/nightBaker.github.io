@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Cache the sfuture with service worker
-date:       2015-05-14
-summary:    Cache the sfuture with service worker.
+date:       2017-05-14
+summary:    Cache the future with service worker.
 categories: jekyll pixyll
 ---
 
@@ -93,6 +93,7 @@ if('serviceWorker' in navigator && navigator.serviceWorker.controller){
 	navigator.serviceWorker.controller.postMessage('Hello from main.js');
 }
 ```
+
 Run our sample and see messages
 //TODO
 
