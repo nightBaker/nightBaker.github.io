@@ -69,6 +69,7 @@ this.addEventListener('fetch', function (event) {
         //})
     );
 });
+```
 
 ## Send message to service worker
 Now we can send messages from out javascript to serviceWorker, however serviceWorker should know how process our messages.
