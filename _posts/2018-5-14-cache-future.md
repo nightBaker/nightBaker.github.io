@@ -73,7 +73,7 @@ this.addEventListener('fetch', function (event) {
 ## Send message to service worker
 Now we can send messages from out javascript to serviceWorker, however serviceWorker should know how process our messages.
 Let's add code for receiving messages firstly
-```
+```javascript
 //sw.js
 
 //event is triggered when message is received
@@ -83,7 +83,7 @@ this.addEventListener('message', function (event) {
 ```
 Now our serviceWorker can receive messages
 Let's send some from website javascript
-```
+```javascript
 //main.js
 
 //check if serviceWorker is supported
@@ -99,7 +99,7 @@ Run our sample and see messages
 ## Add dynamic resource to cache
 Now we can receive messages from our main.js, so such messages can contain urls which we should cache
 Let's edit our message event listener and assume that each message is url
-```
+```javascript
 this.addEventListener('message', function (event) {
     //console.log("SW Received Message: " + event.data);
     caches.open('v1').then(function (cache) {
