@@ -82,6 +82,7 @@ this.addEventListener('message', function (event) {
     console.log("SW Received Message: " + event.data);    
 });
 ```
+
 Now our serviceWorker can receive messages
 Let's send some from website javascript
 ```javascript
