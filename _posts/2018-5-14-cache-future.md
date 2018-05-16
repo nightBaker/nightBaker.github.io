@@ -112,7 +112,3 @@ this.addEventListener('message', function (event) {
 ```
 
 Now we have ability to cache future requests. For example if you have a blog and list of posts in main page you can cache posts pages for client and when he goes to post, it will be opened in a tick.
-
-![_config.yml]({{ site.baseurl }}imagesconfig.png)
-
-The easiest way to make your first post is to edit this one. Go into _posts and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](httpsgithub.combarryclarkjekyll-now) on GitHub.
