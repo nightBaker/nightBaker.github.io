@@ -13,3 +13,11 @@ categories: jekyll pixyll
   top: 50px;
 }
 ```
+
+![My helpful screenshot]({{ "/images/smoothScroll1.gif" | absolute_url }})
+![My helpful screenshot]({{ "/images/smoothScroll2.gif" | absolute_url }})
+```css
+html {
+  scroll-behavior: smooth;
+}
+```
