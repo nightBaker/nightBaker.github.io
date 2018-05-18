@@ -7,3 +7,9 @@ categories: jekyll pixyll
 ---
 
 ![My helpful screenshot]({{ "/images/sticky.gif" | absolute_url }})
+```css
+.element {
+  position: sticky;
+  top: 50px;
+}
+```
