@@ -1,3 +1,11 @@
+---
+layout: post
+title: Cache the future with service worker
+date:       2017-05-14
+summary:    Cache the future with service worker.
+categories: js serviceWorker
+---
+
 1. first of all we have to create interface 
 
 Dapper

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Pixyll
+title: About NightBaker
 permalink: /about/
 tags: about
 ---

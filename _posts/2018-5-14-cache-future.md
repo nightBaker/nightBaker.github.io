@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Cache the sfuture with service worker
+title: Cache the future with service worker
 date:       2017-05-14
 summary:    Cache the future with service worker.
-categories: jekyll pixyll
+categories: js serviceWorker
 ---
 
 ## Brief intro.
@@ -17,6 +17,7 @@ categories: jekyll pixyll
 
 
 ## Reqister	service worker in our main.js
+Firstly, we have to try to install our serviceWorker. sw.js will contain our source code of serviceWorker and should be in a root of website.
 ```javascript
 //if browser supports serviceWorker
 if ('serviceWorker' in navigator) {
@@ -31,6 +32,9 @@ if ('serviceWorker' in navigator) {
 ```
 
 ## Cache initial resource
+In sw.js we can add listeners for events which servicWorker listent to.
+Firstly, let's add event 'install', which is occured when browser try in register serviceWorker first time.
+When we install our service worker we can add resources to cache. Here we add only 2 main files.
 ```javascript
 //sw.js should be in root of our website
 
@@ -42,7 +46,7 @@ this.addEventListener('install', function (event) {
 			//here we can add our static resources to cache
             return cache.addAll([
                 '/js/main.js',
-				'/css/main.css'
+                '/css/main.css'
             ]);
         })
     );
@@ -50,26 +54,36 @@ this.addEventListener('install', function (event) {
 ```
 
 ## Fetch network requests
+Now, we cached some resources, but if we look on network reguest we can see that responces come from our server not cache.
+The reaseon is our service worker in not listenning to network requests. For this functionality we have to add following lines of code.
 ```javascript
+//sw.js
+
 this.addEventListener('fetch', function (event) {
     event.respondWith(
-
-        //Если же мы были достаточно умны, то мы не стали бы просто возвращать сетевой запрос, а сохранили бы его результат в кеше, чтобы иметь возможность получить его в offline-режиме
+        
+        //Here we can check if we have response in cache for this request
+        //If not, browser makes response and we can save this response for future requests in offline
+        //However in this example we do not need to do that for all requests
         caches.match(event.request).then(function (resp) {
             return resp || fetch(event.request).then(function (response) {
                 return caches.open('v1').then(function (cache) {
-                    //cache.put(event.request, response.clone()); ложит ответ в кэш 
+                    //cache.put(event.request, response.clone()); adding response clone to cache because we can read only once from response
                     return response;
                 });
             });
         })
             //.catch(function () {
-            //если на какой-либо запрос в кеше не будет найдено соответствие, и в этот момент сеть не доступна, то наш запрос завершится неудачно. Давайте реализуем запасной вариант по умолчанию, при котором пользователь, в описанном случае, будет получать хоть что-нибудь:
+            //if we don't have response in cache and do not have network connection
+            // we can response with custom image or page
             //return caches.match('/sw-test/gallery/myLittleVader.jpg');
         //})
     );
 });
-```
+```  
+
+For this time we have ability to cache static resources. Also, our service worker works as proxy and response with cached resources.
+But it is not enough, if we want to cache not only static resources. Let's imagine that we have blog and list of posts. We could want to cache posts pages for client for future oflline works. I have good news for you, because it is pretty easy to code.
 
 ## Send message to service worker
 Now we can send messages from out javascript to serviceWorker, however serviceWorker should know how process our messages.
