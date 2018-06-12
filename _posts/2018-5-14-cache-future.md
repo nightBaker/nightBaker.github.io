@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cache the future with service worker
-date:       2017-05-14
+date:       2017-05-24
 summary:    Cache the future with service worker.
 categories: js serviceWorker
 ---
@@ -11,9 +11,8 @@ categories: js serviceWorker
 1. Reqister service worker
 2. Cache initial resources 
 3. Fetch network requests
-3. Send message to service worker
-4. Add dynamic resource to cache
-5. Debug
+4. Send message to service worker
+5. Add dynamic resource to cache
 
 
 ## Reqister	service worker in our main.js
@@ -86,7 +85,7 @@ For this time we have ability to cache static resources. Also, our service worke
 But it is not enough, if we want to cache not only static resources. Let's imagine that we have blog and list of posts. We could want to cache posts pages for client for future oflline works. I have good news for you, because it is pretty easy to code.
 
 ## Send message to service worker
-Now we can send messages from out javascript to serviceWorker, however serviceWorker should know how process our messages.
+Service worker allows us sending messages from our javascript to serviceWorker, however serviceWorker should know how process our messages.
 Let's add code for receiving messages firstly
 ```javascript
 //sw.js
@@ -111,7 +110,7 @@ if('serviceWorker' in navigator && navigator.serviceWorker.controller){
 ```
 
 Run our sample and see messages
-//TODO
+![console log]({{ "/images/HelloSW.jpg" | absolute_url }})
 
 ## Add dynamic resource to cache
 Now we can receive messages from our main.js, so such messages can contain urls which we should cache
@@ -126,3 +125,6 @@ this.addEventListener('message', function (event) {
 ```
 
 Now we have ability to cache future requests. For example if you have a blog and list of posts in main page you can cache posts pages for client and when he goes to post, it will be opened in a tick.
+
+### Check if we have cached resources
+![sw console log]({{ "/images/swConsole.jpg" | absolute_url }})
