@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Cache the future with service worker
+title: .Net Core, Dapper and PostgreSQL
 date:       2017-05-14
-summary:    Cache the future with service worker.
+summary:    .Net Core, Dapper and PostgreSQL
 categories: js serviceWorker
 ---
 
@@ -216,5 +216,17 @@ class JObjectHandler : TypeHandler<JObject>
 		parameter.Value = value?.ToString(Newtonsoft.Json.Formatting.None);
 		((NpgsqlParameter)parameter).NpgsqlDbType = NpgsqlDbType.Jsonb;
 	}
+}
+```
+6. Let's test. Database should set Id for our entity after AddAsync method run
+
+```csharp
+[TestMethod]
+public async Task Add()
+{
+	var item = new Entities.Operation() { CreatedAt = DateTime.Now, Attachment = JObject.Parse("{ test: 'test'}"), OperationTypeId = 1 };
+	await _context.Operations.AddAsync(item);
+
+	Assert.AreNotEqual(0, item.id);	
 }
 ```
