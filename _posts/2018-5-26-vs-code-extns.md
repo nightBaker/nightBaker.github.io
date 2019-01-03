@@ -1,16 +1,17 @@
 ---
 layout:     post
-title:      CSS position sticky
-date:       2017-05-16 11:21:29
-summary:    Simple way to stick element on screen. Css position sticky.
-categories: jekyll pixyll
+title:      VS code useful extensions
+date:       2017-05-26 11:21:29
+summary:    Useful extension for VS code
+categories: vs code extension ssh ftp
 ---
 
-sshextension https://marketplace.visualstudio.com/items?itemName=kondratiev.sshextension#qna
+[sshextension](https://marketplace.visualstudio.com/items?itemName=kondratiev.sshextension#qna)  
 This extension allows you to open an SSH connection in the integrated terminal. The extension was created in order to have access to the SSH in conjunction with the already available access to the FTP.
 For the server list, the extension configuration file ftp-simple is used.
 
-ftp-simple https://marketplace.visualstudio.com/items?itemName=humy2833.ftp-simple
+
+[ftp-simple](https://marketplace.visualstudio.com/items?itemName=humy2833.ftp-simple)  
 
 Directly Open, Edit and Save on server files.
 Save the local file or directory to server(=upload and backup option)

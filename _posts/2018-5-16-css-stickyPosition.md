@@ -2,8 +2,8 @@
 layout:     post
 title:      CSS position sticky
 date:       2017-05-16 11:21:29
-summary:    Simple way to stick element on screen. Css position sticky.
-categories: jekyll pixyll
+summary:    CSS tricks.
+categories: css sticky scroll
 ---
 
 ![My helpful screenshot]({{ "/images/sticky.gif" | absolute_url }})
