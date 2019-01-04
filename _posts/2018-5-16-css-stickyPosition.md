@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      CSS position sticky
+title:      CSS tricks
 date:       2017-05-16 11:21:29
-summary:    CSS tricks.
+summary:    CSS position sticky and smooth scroll
 categories: css sticky scroll
 ---
 
