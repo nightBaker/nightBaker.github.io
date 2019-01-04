@@ -2,7 +2,7 @@
 title:       NightBaker
 email:       underfly_team@mail.ru
 author:      Yerassyl Shalabayev
-description: "My expirience on paper"
+description: "Developer blog"
 baseurl:     ""
 url:         "http://nightBaker.github.io"
 date_format: "%b %-d, %Y"
@@ -20,10 +20,10 @@ google_tag_manager:
 bing_verification:
 
 # Optional features
-animated:             false
-show_related_posts:   false
-show_post_footers:    false
-show_social_icons:    false
+animated:             true
+show_related_posts:   true
+show_post_footers:    true
+show_social_icons:    true
 ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
