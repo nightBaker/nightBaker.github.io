@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Encrypt and decrypt data with PGP on .net core
-date:       2017-05-24
+date:       2019-02-08
 summary:    Encrypt and decrypt files with bouncy castle library using pgp on .net core
 categories: pgp cryptography .net core
 ---
