@@ -14,7 +14,7 @@ Client could give us public key for encryption so only he can decrypt data by pr
 
 OpenPGP - encryption standart.
 
-## Liblary 
+## Library 
 
 There is famous library called BouncyCastle for working with different ecnryption decryption algorithms in .net world. It also contains pgp algorithm.
 So if we download source code and example from official [website](http://git.bouncycastle.org/csharp/index.html). We can see pgp example showing how to encrypt and decrypt file using pgp algorithm.
