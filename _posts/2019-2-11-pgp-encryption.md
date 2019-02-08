@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Encrypt and decrypt data with PGP and .net core
-date:       2019-02-08
-summary:    Encrypt and decrypt files with bouncycastle and openPGP on .net core
-categories: cryptography .net core pgp
+title: Cache the future with service worker
+date:       2017-05-24
+summary:    Cache the future with service worker.
+categories: js serviceWorker
 ---
 
 ## Problem.
@@ -14,7 +14,7 @@ Client could give us public key for encryption so only he can decrypt data by pr
 
 OpenPGP - encryption standart.
 
-##Liblary 
+## Liblary 
 
 There is famous library called BouncyCastle for working with different ecnryption decryption algorithms in .net world. It also contains pgp algorithm.
 So if we download source code and example from official [website](http://git.bouncycastle.org/csharp/index.html). We can see pgp example showing how to encrypt and decrypt file using pgp algorithm.
@@ -293,6 +293,7 @@ Following official example, we need only few classes
         }
     }
 ```
+
 ```c#
  public class Streams
     {
@@ -308,4 +309,30 @@ Following official example, we need only few classes
             }
         }
     }
+```
+
+Now we can write small test to check it.
+
+```c#
+            Pgp.EncryptFile("Resources/output.txt", "Resources/input.txt", "Resources/publicKey.txt", true, true);
+
+            Pgp.DecryptFile("Resources/output.txt", "Resources/privateKey.txt", "pass".ToCharArray(), "default.txt");
+
+```
+
+if we open our ```output.txt``` file we can see such content
+```txt
+-----BEGIN PGP MESSAGE-----
+Version: BCPG C# v1.9.0.0
+
+hQEMA/r7BVY9J2TEAQf/XbMEsR+5YgmGi00g++c1NwpP/R+6D52cbAW8gQZjSWm/
+Of2I4llMw9YFzrGutWnx5gbFlcerEw66zozfdQY1QXn9Q4zPMoBV4UX95ImjXgcp
+OyXPoB2Z4O5zxsusGmQrUhaStEEvP5vWr9Pbt+JBHvUKtxPQ4n5iwRapCSHeVuwz
+tsUesrz3z3OGBtr6LDhIY9Y7VuuGWeTbdv6SlDGbgJ/hYT78yIhCqMHtu7Wnqcii
+JjGetCNrS1sbrLP9avTqV8jAuBSeMBpH9giUS8GqMpjQeHS7SfPOPMX3nczVumHD
+t2U/a7FA4Zl74ROK5Sa7VligpSHlqve0QYK0lTpuz9JMAZWwaxBREsWY0G/TfAQV
+5xteGI6vL9+MkDMkP+20gz3PljEbzZLb76d6b864qOr2GT/88FiPW2RVEBjNs2cr
+ZfhYXmYbUTSV+b/4Cg==
+=DaO6
+-----END PGP MESSAGE-----
 ```
