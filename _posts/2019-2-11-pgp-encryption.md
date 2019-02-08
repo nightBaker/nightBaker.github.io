@@ -321,7 +321,8 @@ Now we can write small test to check it.
 ```
 
 if we open our ```output.txt``` file we can see such content
-```txt
+
+```
 -----BEGIN PGP MESSAGE-----
 Version: BCPG C# v1.9.0.0
 
