@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Cache the future with service worker
+title: Encrypt and decrypt data with PGP on .net core
 date:       2017-05-24
-summary:    Cache the future with service worker.
-categories: js serviceWorker
+summary:    Encrypt and decrypt files with bouncy castle library using pgp on .net core
+categories: pgp cryptography .net core
 ---
 
 ## Problem.
