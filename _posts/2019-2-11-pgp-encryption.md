@@ -13,6 +13,7 @@ In order to Client could trust our data and know that even we can't read secret 
 Client could give us public key for encryption so only he can decrypt data by private key.
 
 OpenPGP - encryption standart.
+![Pgp encryption decryption flow]({{ "/images/Pgp.svg" | absolute_url }})
 
 ## Library 
 
