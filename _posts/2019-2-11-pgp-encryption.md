@@ -9,18 +9,23 @@ categories: pgp cryptography .net core
 ## Problem.
 
 We need to encrypt file with pgp algorithm by public key. 
-In order to Client could trust our data and know that even we can't read secret data.
-Client could give us public key for encryption so only he can decrypt data by private key.
+It is done mostly for setting up the trust between Client and Data provider as nobody except the Client can get access to this secret data.
+
+It means that only the Client may decrypt it using private key.
 
 OpenPGP - encryption standart.
 ![Pgp encryption decryption flow]({{ "/images/Pgp.svg" | absolute_url }})
 
 ## Library 
 
-There is famous library called BouncyCastle for working with different ecnryption decryption algorithms in .net world. It also contains pgp algorithm.
-So if we download source code and example from official [website](http://git.bouncycastle.org/csharp/index.html). We can see pgp example showing how to encrypt and decrypt file using pgp algorithm.
+To solve the "trust" problem in .net world there is the library called BouncyCastle. In can be applied for working with different encryption/decryption algorithms.
 
-First of all we need next nuget packages
+Moreover it contains pgp algorithm. So the easiest way to become acquainted with the algorithm is to download source code and example from official [website](http://git.bouncycastle.org/csharp/index.html).
+
+Let look through the example showing how to encrypt and decrypt file by pgp algorithm.
+
+Firstly we need next nuget packages:
+
 ```powershell
 Install-Package  BouncyCastle.NetCore
 Install-Package  BouncyCastle.NetCoreSdk
@@ -339,9 +344,9 @@ ZfhYXmYbUTSV+b/4Cg==
 -----END PGP MESSAGE-----
 ```
 
-However we not always work with files on disk. It is more convinient to abstract of source of file and work with array of bytes as input data.
-The solution is described on [stackOverflow](https://stackoverflow.com/questions/4192296/c-sharp-how-to-simply-encrypt-a-text-file-with-a-pgp-public-key).
-And looks like that:
+However we don`t always work with files on the disk. It is more convenient to abstract the source of the file and work with array of bytes as input data.
+
+The solution is described on [stackOverflow](https://stackoverflow.com/questions/4192296/c-sharp-how-to-simply-encrypt-a-text-file-with-a-pgp-public-key). And looks like this:
 
 ```c#
    public class Pgp
