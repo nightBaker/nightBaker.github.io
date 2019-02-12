@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Store array of number with ef core and fluent api
+title: Store array of numbers with ef core and fluent api
 date:       2019-02-12
 summary:    Using value converter of entity framework core and fluent api
 categories: ef core, fluent api, .net core
 ---
 
-## Problem.
+## Problem
 
 Sometimes we have data which we are mapping to table, however there is array of info related to our entity and we don't want to create separate table for such information and to use one to many relationships. 
 For example, we have entity loteryTicket where user can choose 10 any numbers from 0 to 100. Now loteryTicker has array of numbers. There are two way to store data into table. First, we could create new table with only number column and loteryTicket id column. Second, we could use the same table and add new column which can contain converted array of numbers.  
 
+## Solution
 Let's consider second way and how entity framework core can ease our life.
 
 Consume we have such entity
