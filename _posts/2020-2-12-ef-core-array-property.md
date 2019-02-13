@@ -8,13 +8,21 @@ categories: ef core, fluent api, .net core
 
 ## Problem
 
-Sometimes we have data which we are mapping to table, however there is array of info related to our entity and we don't want to create separate table for such information and to use one to many relationships. 
-For example, we have entity loteryTicket where user can choose 10 any numbers from 0 to 100. Now loteryTicker has array of numbers. There are two way to store data into table. First, we could create new table with only number column and loteryTicket id column. Second, we could use the same table and add new column which can contain converted array of numbers.  
+Sometimes we have data which we are mapping to table, however there is array of info related to our entity.
+Obviously we don’t want to build separate table for such information and create one too many relationships.
+
+The folloiwng example may help us to have the deep dive to the problem. We have entity "loteryTicket" where user may randomly select any ten numbers from 0 to 100.
+
+So"loteryTicker" has an array of numbers. There can be two possibilities to store data in the table.
+
+The first one, we could create new table with two columns one for storing the number, another for ticket id.
+
+The second, we may use the same table and just updated it with new column which will store the converted array of numbers.
 
 ## Solution
-Let's consider second way and how entity framework core can ease our life.
+Let’s look through the second way and how entity framework core can simplify our life.
 
-Consume we have such entity
+Consider we have such entity
 ```c#
 public class LoteryTicket
 {
@@ -26,7 +34,7 @@ public class LoteryTicket
 }
 ```
 
-EF has ValueConverter generic class, which can be used to say ef to convert value before insert it into table and after receiving convert it to property.
+EF has ValueConverter generic class, which can be used to say ef to convert value before inserting it into table and after receiving the result convert it to property.
 
 Let's create our converter
 ```c#
@@ -41,4 +49,4 @@ modelBuilder.Entity<LoteryTicket>()
                 .HasConversion(converter);
 ```
 
-That's all. Now our property is saved in our custom format like "10;5;34", hovewer at application layer we abstract of persistence and work with array.
+That’s it. Finaly our property saved in our custom format like “10;5;34”. Hovewer at application layer we may abstract of persistence and work with the array.
