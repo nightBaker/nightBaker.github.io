@@ -7,7 +7,7 @@ categories: Angular 7, asp.net core, docker
 ---
 
 ## Problem
-We have Asp.net core 2.2 SPA with Angular 7 application. There is dockerfile which build docker image for out app below.
+We have Asp.net core 2.2 SPA with Angular 7 application. Below, dockerfile which builds docker image for our app.
 
 ## Solution
 
