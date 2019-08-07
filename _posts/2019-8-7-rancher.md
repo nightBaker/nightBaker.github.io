@@ -32,7 +32,7 @@ Milicores (milicpus) means fraction of CPU core. For example, if you have 2 avai
 
 For setting up limit for service you have to go to edit page of service and then click `Show advanced options`, in the bottom of list you find `Security & Host config`
 
-![service edit limits page]({{ "/images/rancher/service_limits.png" | absolute_url }})
+![service edit limits page]({{ "/images/rancher/Service_limits.png" | absolute_url }})
 As you can see , there same settings for limits as for namespace.  
 
 ### Conclusion
