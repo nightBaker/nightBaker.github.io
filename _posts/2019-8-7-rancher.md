@@ -1,5 +1,4 @@
 ---
----
 layout: post
 title: Namespace and service limits in Rancher
 date:       2019-08-07
