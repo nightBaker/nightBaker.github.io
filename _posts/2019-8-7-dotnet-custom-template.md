@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dotnet custom template 
-date:       2019-08-10
+date:       2019-08-08
 summary:    Dotnet template from zero to nuget package
 categories: Rancher Docker Kubernates
 ---
@@ -20,7 +20,7 @@ Fortunately, dotnet allows us create our custom template in few easy steps.
 
 First of all, we have to create solution or just project for your template. In my case, I've created solution with structure based on DDD. So I have API - infrastrucure, Application layer and Domain layer. Also for all layers I created xUnit test projects.
 
-![solution visual studio DDD]({{ "/images/dotnet-template/Solution.png" | absolute_url }})
+![solution visual studio DDD]({{ "/images/dotnet-template/solution.png" | absolute_url }})
 
 ### Dependencies
 
