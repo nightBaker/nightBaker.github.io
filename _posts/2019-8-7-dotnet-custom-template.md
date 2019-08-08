@@ -44,13 +44,13 @@ Our appsettings.json
     }
   },
   "ConnectionStrings": {
-    "{{Database_Name}}": "User ID=postgres;Password=postgres;Host=localhost;Port=15432;Database=\\{\\{Database_Name\\}\\};Pooling=true;",    
+    "{% raw %}{{Database_Name}}{% endraw %}": "User ID=postgres;Password=postgres;Host=localhost;Port=15432;Database={% raw %}{{Database_Name}}{% endraw %};Pooling=true;",    
   },
   "AllowedHosts": "*"  
 }
 ```
 
-Note, we use name of connection string and database name as `\\{\\{Database_Name\\}\\}`. It allows template to use it like a variable for replacing it during generating.
+Note, we use name of connection string and database name as `{% raw %}{{Database_Name}}{% endraw %}`. It allows template to use it like a variable for replacing it during generating.
 
 Now we need to create DbContext
 ```csharp
@@ -77,13 +77,13 @@ public void ConfigureServices(IServiceCollection services)
     services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
     
     services.AddDbContext<DatabaseContext>(options =>
-        options.UseNpgsql(Configuration.GetConnectionString("\\{\\{Database_Name\\}\\}")));
+        options.UseNpgsql(Configuration.GetConnectionString("{% raw %}{{Database_Name}}{% endraw %}")));
 
     
 }
 ```
 
-Note, we again use string `\\{\\{Database_Name\\}\\}` which will be replace with our real database name
+Note, we again use string `{% raw %}{{Database_Name}}{% endraw %}` which will be replace with our real database name
 
 #### Nlog
 
@@ -160,7 +160,7 @@ Firstly, we have to create folder in the root of solution and name it `.template
       "type": "parameter",
 	  "isRequired": "true",
       "datatype": "string",
-      "replaces": "\\{\\{Database_Name\\}\\}",
+      "replaces": "{% raw %}{{Database_Name}}{% endraw %}",
       "defaultValue": "MyGameStartupDB",
       "description": "The database name attached to this project."
     }		

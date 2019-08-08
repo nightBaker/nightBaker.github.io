@@ -21,6 +21,7 @@ Goto edit page of namespace
 ![Namespace edit page]({{ "/images/rancher/namespace_edit.png" | absolute_url }})
 
 As you can see there are no set limits by default. There are 4 limits which you can set.
+
 1. CPU Limit - max amount of available CPU in milicores
 2. CPU Reservation - amount of CPU which would be reserved for the namespace
 3. Memory Limit - max amount of memory in MB
