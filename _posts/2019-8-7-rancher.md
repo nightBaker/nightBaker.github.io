@@ -1,7 +1,8 @@
 ---
+---
 layout: post
 title: Namespace and service limits in Rancher
-date:       2019-08-10
+date:       2019-08-07
 summary:    Rancher limits
 categories: Rancher Docker Kubernates
 ---
