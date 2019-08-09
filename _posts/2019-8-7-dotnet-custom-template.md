@@ -3,7 +3,7 @@ layout: post
 title: Dotnet custom template 
 date:       2019-08-08
 summary:    Dotnet template from zero to nuget package
-categories: Donnet template api 
+categories: Dotnet template api 
 ---
 
 ## Problem
