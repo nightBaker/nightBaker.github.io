@@ -3,7 +3,7 @@ layout: post
 title: Dotnet custom template 
 date:       2019-08-08
 summary:    Dotnet template from zero to nuget package
-categories: Rancher Docker Kubernates
+categories: Donnet template api 
 ---
 
 ## Problem
