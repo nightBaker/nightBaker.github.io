@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Dotnet custom template 
-date:       2019-08-08
-summary:    Dotnet template from zero to nuget package
-categories: Dotnet template api 
+title: Prepare to c# exam
+date:       2019-08-12
+summary:    The task parallel library
+categories: csharp tpl task
 ---
 
 ## Problem
@@ -24,7 +24,7 @@ First of all, we have to create solution or just project for your template. In m
 
 ### Dependencies
 
-Now, you can add necessary dependies to your project. Let's add basic firstly.
+Now, you can add necessary dependies to your project. Let's add basic firstly. 
 
 #### Entity framework
 
@@ -44,7 +44,7 @@ Our appsettings.json
     }
   },
   "ConnectionStrings": {
-    "{% raw %}{{Database_Name}}{% endraw %}": "User ID=postgres;Password=postgres;Host=localhost;Port=15432;Database={% raw %}{{Database_Name}}{% endraw %};Pooling=true;",
+    "{% raw %}{{Database_Name}}{% endraw %}": "User ID=postgres;Password=postgres;Host=localhost;Port=15432;Database={% raw %}{{Database_Name}}{% endraw %};Pooling=true;",    
   },
   "AllowedHosts": "*"  
 }
@@ -53,7 +53,6 @@ Our appsettings.json
 Note, we use name of connection string and database name as `{% raw %}{{Database_Name}}{% endraw %}`. It allows template to use it like a variable for replacing it during generating.
 
 Now we need to create DbContext
-
 ```csharp
 namespace ProjectTemplate.Api.Data
 {
@@ -70,15 +69,17 @@ namespace ProjectTemplate.Api.Data
     }
 }
 ```
-
 Startup.cs
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+    
     services.AddDbContext<DatabaseContext>(options =>
         options.UseNpgsql(Configuration.GetConnectionString("{% raw %}{{Database_Name}}{% endraw %}")));
+
+    
 }
 ```
 
@@ -142,27 +143,27 @@ Firstly, we have to create folder in the root of solution and name it `.template
 
 ```json
 {
-  "$schema": "http://json.schemastore.org/template",
+  "$schema": "http://json.schemastore.org/template", 
   "author": "Your name",
-  "classifications": [ "Web/API/Nlog/Entity framework core" ],
-  "name": "Night backer template",
-  "identity": "nightApi",
-  "shortName": "nightApi",
+  "classifications": [ "Web/API/Nlog/Entity framework core" ], 
+  "name": "Night backer template", 
+  "identity": "nightApi", 
+  "shortName": "nightApi", 
   "tags": {
-    "language": "C#",
+    "language": "C#", 
     "type": "project"
   },
-  "sourceName": "ProjectTemplate",  // every entry of this string in source code or in project names will be replace with given value
-  "preferNameDirectory": true,
+  "sourceName": "ProjectTemplate",  // every entry of this string in source code or in project names will be replace with given value 
+  "preferNameDirectory": true, 
   "symbols": { // this section allows to replace our variables with given value during generating project from template
-    "db": {
+    "db": { 
       "type": "parameter",
-      "isRequired": "true",
+	  "isRequired": "true",
       "datatype": "string",
       "replaces": "{% raw %}{{Database_Name}}{% endraw %}",
       "defaultValue": "MyGameStartupDB",
       "description": "The database name attached to this project."
-    }
+    }		
   }
 }
 ```
@@ -191,7 +192,7 @@ Using whole solution for creation of template is not so convinient way, for exam
  So you may want to share it easily like nuget package. Fortunately, it is as much simple as creating template.
 
 1. Let's create folder and name it `ProjectTemplatePackage`.
-2. Copy our project folder into just created folder.
+2. Copy our project folder into just created folder. 
 3. Create file `ProjectTemplates.csproj` with content :
 
 ```xml
@@ -220,7 +221,7 @@ Using whole solution for creation of template is not so convinient way, for exam
 </Project>
 ```
 
-4.Run command
+4. Run command
 
 ```console
 dotnet pack
@@ -232,3 +233,4 @@ If you want to install template from nuget package use following command
 ```console
 dotnet new -i <PATH_TO_NUPKG_FILE>
 ```
+
