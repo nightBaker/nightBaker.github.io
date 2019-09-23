@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
+
+<div class="ad">
+    <div>ad</div>
+    <script data-cfasync='false' type='text/javascript' src='//p367845.clksite.com/adServe/banners?tid=367845_721299_0'></script>
+</div>
+
 <body class="site{% if site.animated %} animated fade-in-down{% endif %}">
   {% if site.google_tag_manager %}
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
@@ -36,8 +42,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>  
   {% include footer.html %}
 </body>
-<div class="ad">
-    <div>ad</div>
-    <script data-cfasync='false' type='text/javascript' src='//p367845.clksite.com/adServe/banners?tid=367845_721299_0'></script>
-</div>
+
 </html>
