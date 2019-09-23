@@ -4,8 +4,14 @@
 }
 
 .ad{
-  position: sticky;
+  position: absolute;
   top: 200px;
-  float: right;
-  align-self: flex-start;
+  right: 50px;  
+}
+
+@media only screen and (max-width: 1500px)  
+{
+    .ad{
+      display: none;
+    }
 }
