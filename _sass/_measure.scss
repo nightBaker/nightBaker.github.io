@@ -1,14 +1,6 @@
 .measure {
   margin: 0 auto;
   max-width: $measure-width;
-  display: flex;
-  flex-direction: row;
-
-  .measure-body{
-    display: flex;
-    flex-direction: column;
-  }
-
 }
 
 .ad{
