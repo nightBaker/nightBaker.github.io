@@ -226,7 +226,7 @@ Now, we can change our route in `Startup.cs`
 });
 ```
 
-As you can see, route will be matched for all requests started on `Calculator`. However, we set up only default controller for giver route and it will search for right action.
+As you can see, route will be matched for all requests started on `Calculator`. However, we set up only default controller for given route and it will search for right action.
 
 Rerun application and explore navigation bar. It should be changed to next form:
 
@@ -254,7 +254,7 @@ app.UseMvc(routes =>
 });
 ```
 
-First of all, `Route` attribute with specified temlate should be added to `MessagesController` as following
+First of all, `Route` attribute with specified template should be added to `MessagesController` as following
 
 ```csharp
 [Route("Say")]
@@ -280,7 +280,7 @@ public class MessagesController : Controller
 Check it out. It should be still working.
 
 But what about Calculator controller. Let's changed it to real calculator.
-First of all , I want add action sum, which should return sum of two numbers. 
+First of all , I want add action `sum`, which should return sum of two numbers. 
 
 ```csharp
 public class CalculatorController : Controller
