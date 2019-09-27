@@ -8,7 +8,7 @@ categories: Asp net core Mvc routing
 
 ## Start point
 
-In the previous [article] we added mvc support to asp.net core empty project.
+In the previous [article](https://nightbaker.github.io/asp.net/core/mvc/2019/09/20/asp-empty/) we added mvc support to asp.net core empty project.
  Now, I'm going to consider all ways of setting up routings.
 
 ## Conventional routing
