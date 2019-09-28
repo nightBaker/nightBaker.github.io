@@ -31,7 +31,7 @@ app.UseMvc(routes =>
 {
     routes.MapRoute(
         name: "messages",
-        template: "say/{**message}",
+        template: "say/{*message}",
         defaults: new { controller="Messages", action = "ShowMessage" });
 
     routes.MapRoute(
@@ -338,14 +338,12 @@ Now, let's expand calculator functionality with division action
 [Route("[controller]/[action]")]
     public class CalculatorController : Controller
     {
-        public CalculatorController()
-        {
-            ViewData["action"] = RouteData.Values["action"].ToString();
-        }
+        
 
         [Route("{firstNumber:int}/{secondNumber:int}")]
         public IActionResult Sum(int firstNumber, int secondNumber)
         {
+            ViewData["action"] = RouteData.Values["action"].ToString();
             ViewData["mark"] = '+';
             ViewData["firstNumber"] = firstNumber;
             ViewData["secondNumber"] = secondNumber;
@@ -357,6 +355,7 @@ Now, let's expand calculator functionality with division action
         [Route("{firstNumber:int}/{secondNumber:int}")]
         public IActionResult Divide(int firstNumber, int secondNumber)
         {
+            ViewData["action"] = RouteData.Values["action"].ToString();
             ViewData["mark"] = '/';
             ViewData["firstNumber"] = firstNumber;
             ViewData["secondNumber"] = secondNumber;
