@@ -6,7 +6,8 @@
 .ad{
   position: absolute;
   top: 200px;
-  right:150px;  
+  right:150px;
+  min-width: 300px;
 }
 
 @media only screen and (max-width: 1500px)  
