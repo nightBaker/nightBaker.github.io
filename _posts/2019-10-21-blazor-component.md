@@ -8,13 +8,13 @@ categories: Asp net core blazor razor component
 
 ## Blazor
 
-Blazor server side came with .net core 3. At the same time, Blazor client side is still in preview. Release is going to be in the beginning of next summer.
- As you can see Blazor is in start point of big future. Hovewer, there are already many libraries containing all kinds of blazor components from small ui to big frameworks.
+Blazor server side came with .net core 3. At the same time, Blazor client side is still in preview. Release is going to be at the beginning of next summer.
+ As you can see Blazor is at initial point of great future. Hovewer, there are already many libraries containing all kinds of blazor components from small ui to big frameworks.
  Today, I wanna show you how to create a new one with your custom component.
 
 ### Razor class library
 
-First step is creating new project. Right click on on solution `Add->NewProject->Razor Class Library`
+First step is creating new project. Right click on solution `Add->NewProject->Razor Class Library`
 
 ![creating razor class library]({{ "/images/razor-library/create.png" | absolute_url }})
 
