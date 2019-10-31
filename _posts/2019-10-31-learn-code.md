@@ -26,6 +26,20 @@ Let's create our first project - console application. You can name it as you wis
 ### Printing messages
 
 1. Print following message: `Hello world, my name is <YourName>`
+
+<details><summary><i>show solution</i></summary>
+<p>
+
+```csharp
+static void Main(string[] args)
+{
+    Console.WriteLine("Hello world, my name is NightBaker");
+}
+```
+
+</p>
+</details>
+
 2. Write a program to print a big 'C' using hash (`#`)
 
 ```powershell
