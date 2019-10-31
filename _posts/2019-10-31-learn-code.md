@@ -37,10 +37,12 @@ Where `Programm.cs` is file with `Program` class and `static void Main(string[] 
 <p>
 
 ```csharp
+
 static void Main(string[] args)
 {
     Console.WriteLine("Hello world, my name is NightBaker");
 }
+
 ```
 
 </p>
