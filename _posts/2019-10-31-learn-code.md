@@ -22,6 +22,7 @@ Let's create our first project - console application. You can name it as you wis
 ![creating console app]({{ "/images/learn-code/1/create-console-app.gif" | absolute_url }})
 
 Your newly created project has following structure
+
 ![console app structure]({{ "/images/learn-code/1/structure.png" | absolute_url }})
 
 Where `Programm.cs` is file with `Program` class and `static void Main(string[] args)` method, which is entry point of your program.
