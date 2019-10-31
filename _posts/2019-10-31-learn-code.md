@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learn to code
-date:       2019-10-22
+date:       2019-10-31
 summary:    Learning how to code with C# in .net core
 categories: net core console
 ---
