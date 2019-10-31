@@ -21,6 +21,8 @@ Let's create our first project - console application. You can name it as you wis
 
 ![creating console app]({{ "/images/learn-code/1/create-console-app.gif" | absolute_url }})
 
+## Exercises
+
 ### Printing messages
 
 1. Print following message: `Hello world, my name is <YourName>`
