@@ -31,9 +31,6 @@ Where `Programm.cs` is file with `Program` class and `static void Main(string[] 
 
 ### Printing messages
 
-{% details Read more about that **thing**... %}
-  That **thing** is...
-{% enddetails %}
 
 1. Print following message: `Hello world, my name is <YourName>`
 
