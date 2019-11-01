@@ -4,7 +4,7 @@ email:       underfly_team@mail.ru
 author:      Yerassyl Shalabayev
 description: "Developer blog"
 baseurl:     ""
-url:        "http://nightbaker.github.io"
+url:        "https://nightbaker.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md

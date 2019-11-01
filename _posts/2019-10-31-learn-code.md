@@ -120,15 +120,15 @@ Every time we want to create variable in our source code, firstly we must define
 
     int a = 5;
     int b = 10;
-    int sum = a + b; // will be 15
+    int sum1 = a + b; // will be 15
 
     string x = "5";
     string y = "10"
-    string sum = x + y; // will be "510"
+    string sum2 = x + y; // will be "510"
 
 ```
 
 
-1. Compute `(a + 4b)(a - 3b) + $$ a^2 $$`, where `a` and `b` should be entered by user.
+1. Compute `(a + 4b)(a - 3b) + ` $$ a^2 $$, where `a` and `b` should be entered by user.
  **Note.** Use [Math.Sqrt](https://docs.microsoft.com/en-us/dotnet/api/system.math.sqrt?view=netframework-4.8#System_Math_Sqrt_System_Double_) method for getting the square root of a specified number.
 2. 
