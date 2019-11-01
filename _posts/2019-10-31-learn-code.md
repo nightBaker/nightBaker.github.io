@@ -32,22 +32,8 @@ Where `Programm.cs` is file with `Program` class and `static void Main(string[] 
 ### Printing messages
 
 
-1. Print following message: `Hello world, my name is <YourName>`
-
-<details><summary><i>show solution</i></summary>
-<p>
-
-```csharp
-
-static void Main(string[] args)
-{
-    Console.WriteLine("Hello world, my name is NightBaker");
-}
-
-```
-
-</p>
-</details>
+1. Print following message: `Hello world, my name is <YourName>`  
+[go to solution](#Printing-messages-solutions)
 
 2. Write a program to print a big 'C' using hash (`#`)
 
@@ -131,4 +117,21 @@ Every time we want to create variable in our source code, firstly we must define
 
 1. Compute $$ (a + 4b)(a - 3b) + a^2 $$, where `a` and `b` should be entered by user.
  **Note.** Use [Math.Sqrt](https://docs.microsoft.com/en-us/dotnet/api/system.math.sqrt?view=netframework-4.8#System_Math_Sqrt_System_Double_) method for getting the square root of a specified number.
-2. 
+
+2. Compute $$ |x| + x^7  $$ where `x` is entered by user
+
+
+
+## Solutions
+
+### Printing messages solutions
+
+1.  
+```csharp
+
+static void Main(string[] args)
+{
+    Console.WriteLine("Hello world, my name is NightBaker");
+}
+
+```
