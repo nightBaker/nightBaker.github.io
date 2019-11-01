@@ -33,7 +33,7 @@ Where `Programm.cs` is file with `Program` class and `static void Main(string[] 
 
 
 1. Print following message: `Hello world, my name is <YourName>`  
-[go to solution](#Printing-messages-solutions)
+[go to solution](#printing-messages-solutions)
 
 2. Write a program to print a big 'C' using hash (`#`)
 
