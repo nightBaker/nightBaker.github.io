@@ -81,3 +81,54 @@ static void Main(string[] args)
    * *      * *
     *        *
 ```
+
+
+### Arithmetic exercies
+
+Following line of code allows read line from **console** input stream
+```csharp
+var line = Console::ReadLine();
+```
+
+For example, program sums two numbers and output result
+
+```csharp
+class Program
+{
+    static void Main(string[] args)
+    {
+        string aInput = Console.ReadLine();
+        string bInput = Console.ReadLine();
+
+        int a = int.Parse(aInput);
+        int b = int.Parse(bInput);
+
+        int sum = a + b;
+
+        Console.WriteLine(sum);
+    }
+}
+```
+
+**Note** 
+`Console.ReadLine()` returns string. *String* is data type which represents text. However, we wait for number as input data. So we need to get number from input string. We can use method `int.Parse` of type *int*, which returns *Integer* (int) data type. *Integer* represents number. 
+
+#### Why we need data types
+Every time we want to create variable in our source code, firstly we must define data type of variable. One of the reason is that different types behave differently. For example,
+
+```csharp
+
+    int a = 5;
+    int b = 10;
+    int sum = a + b; // will be 15
+
+    string x = "5";
+    string y = "10"
+    string sum = x + y; // will be "510"
+
+```
+
+
+1. Compute `(a + 4b)(a - 3b) + $$a^2$$`, where `a` and `b` should be entered by user.
+ **Note.** Use [Math.Sqrt](https://docs.microsoft.com/en-us/dotnet/api/system.math.sqrt?view=netframework-4.8#System_Math_Sqrt_System_Double_) method for getting the square root of a specified number.
+2. 
