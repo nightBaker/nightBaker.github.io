@@ -126,7 +126,8 @@ Every time we want to create variable in our source code, firstly we must define
 
 ### Printing messages solutions
 
-1.  
+1. 
+
 ```csharp
 
 static void Main(string[] args)
