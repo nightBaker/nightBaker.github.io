@@ -127,7 +127,7 @@ Every time we want to create variable in our source code, firstly we must define
 
 2. Compute $$ |x| + x^7  $$ where `x` is entered by user
 
-3. Compute $$ frac{|x-5|-\sin{x}}{3}+\sqrt{x^2+2014}\cos{2x-3} $$
+3. Compute <div> $$ frac{|x-5|-\sin{x}}{3}+\sqrt{x^2+2014}\cos{2x-3} $$ </div>
 
 ## Solutions
 
