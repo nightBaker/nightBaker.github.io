@@ -122,8 +122,8 @@ Every time we want to create variable in our source code, firstly we must define
 
 1. Compute $$ (a + 4b)(a - 3b) + a^2 $$, where `a` and `b` should be entered by user. When `a = 10, b = 15`, result is `-2350`  
 **Note.** Use [Math.Pow](https://docs.microsoft.com/en-us/dotnet/api/system.math.pow?view=netframework-4.8) method for getting a number raised to specified power
- 
-2. Compute <div > $$ |x| + x^7  $$ </div> where `x` is entered by user
+
+2. <div > $$ |x| + x^7  $$ </div> where `x` is entered by user
 
 3. <div> $$ \displaystyle\frac{|x-5|-\sin{x}}{3}+\sqrt{x^2+2014}\cos{2x-3} $$ </div>
 
