@@ -121,11 +121,16 @@ Every time we want to create variable in our source code, firstly we must define
 ```
 
 1. Compute $$ (a + 4b)(a - 3b) + a^2 $$, where `a` and `b` should be entered by user. When `a = 10, b = 15`, result is `-2350`  
-**Note.** Use [Math.Pow](https://docs.microsoft.com/en-us/dotnet/api/system.math.pow?view=netframework-4.8) method for getting a number raised to specified power
+**Note.** Use [Math.Pow](https://docs.microsoft.com/en-us/dotnet/api/system.math.pow?view=netframework-4.8) method for getting a number raised to specified power  
+[go to solution](#arithmetic-exercies-solutions)
 
 2. <div > $$ |x| + x^7  $$ </div> where `x` is entered by user
+[go to solution](#arithmetic-exercies-solutions)
 
 3. <div> $$ \displaystyle\frac{|x-5|-\sin{x}}{3}+\sqrt{x^2+2014}\cos{2x-3} $$ </div>
+[go to solution](#arithmetic-exercies-solutions)
+
+4. <div> $$ e^{x-2}+|\sin(x)|-x^{4}\cdot\cos{\frac{1}{x}} $$ </div>
 
 ## Solutions
 
@@ -192,4 +197,32 @@ int b = int.Parse(bInput);
 
 double result = (a + (4 * b)) * (a-(3 * b)) - Math.Pow(a,2) ;
 Console.WriteLine("(a+4b)(a−3b)+a2 = "+ result);
+```
+
+2.
+
+```csharp
+Console.WriteLine("Write number");
+string aInput = Console.ReadLine();
+
+
+
+int a = int.Parse(aInput);
+
+double result = Math.Abs(a) + Math.Pow(a, 7);
+Console.WriteLine("|x|+x^7 = " + result);
+```
+
+3.
+
+```csharp
+Console.WriteLine("Write number");
+string aInput = Console.ReadLine();
+
+
+
+int a = int.Parse(aInput);
+
+double result = (Math.Abs(a - 5) - Math.Sin(a))/3 + Math.Sqrt(Math.Pow(a, 2) + 2014) *  Math.Cos(2 * a) - 3; 
+Console.WriteLine("Answer = " + result);
 ```
