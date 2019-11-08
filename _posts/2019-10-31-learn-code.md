@@ -191,6 +191,8 @@ square the third number and then the sum of the new three numbers.
 8. User enters  side of square. Find perimeter and area of the square
 
 9. User enters price of one kilo of candies and 1kg of cookies. Find price of 300 grams candies and 400 grams cookies. Find price of 2kg cookies and 1.8kg of candies.  
+
+
 ---
 
 ### Arithmetic exercies solutions
