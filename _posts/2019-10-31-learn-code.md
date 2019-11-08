@@ -274,3 +274,23 @@ int prod = a * b;
 Console.WriteLine(a + " + "+ b + " = "+ sum);
 Console.WriteLine(a + " * " + b + " = " + prod);
 ```
+
+6. 
+
+```csharp
+Console.WriteLine("Write 1st number ");
+string aInput = Console.ReadLine();
+Console.WriteLine("Write 2nd number ");
+string bInput = Console.ReadLine();
+Console.WriteLine("Write 3rd number ");
+string cInput = Console.ReadLine();
+
+double a = double.Parse(aInput);
+double b = double.Parse(bInput);
+double c = double.Parse(cInput);
+
+
+double result = a * 2 + b / 3 + Math.Pow(c, 2);
+Console.WriteLine(result);
+```
+
