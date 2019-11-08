@@ -132,6 +132,20 @@ Every time we want to create variable in our source code, firstly we must define
 
 4. <div> $$ e^{x-2}+|\sin(x)|-x^{4}\cdot\cos{\frac{1}{x}} $$ </div>
 
+5. User enters 2 numbers, compute sum and production of these numbers
+
+6. User enters 3 numbers. Double the first number, reduce second number by 3,
+square the third number and then the sum of the new three numbers.
+
+7. User enters 3 numbers. Find average if these numbers and the difference between the doubled sum of first and third numbers and the tripple second number.
+
+8. User enters  side of square. Find perimeter and area of the square
+
+9. User enters price of one kilo of candies and 1kg of cookies. Find price of 300 grams candies and 400 grams cookies. Find price of 2kg cookies and 1.8kg of candies.  
+
+
+----
+
 ## Solutions
 
 ### Printing messages solutions
@@ -180,18 +194,6 @@ Console.WriteLine("  *   *    *   *");
 Console.WriteLine("   * *      * *");
 Console.WriteLine("    *        * ");
 ```
-
-5. User enters 2 numbers, compute sum and production of these numbers
-
-6. User enters 3 numbers. Double the first number, reduce second number by 3,
-square the third number and then the sum of the new three numbers.
-
-7. User enters 3 numbers. Find average if these numbers and the difference between the doubled sum of first and third numbers and the tripple second number.
-
-8. User enters  side of square. Find perimeter and area of the square
-
-9. User enters price of one kilo of candies and 1kg of cookies. Find price of 300 grams candies and 400 grams cookies. Find price of 2kg cookies and 1.8kg of candies.  
-
 
 ---
 
