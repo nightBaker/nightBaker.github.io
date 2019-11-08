@@ -181,6 +181,18 @@ Console.WriteLine("   * *      * *");
 Console.WriteLine("    *        * ");
 ```
 
+5. User enters 2 numbers, compute sum and production of these numbers
+
+6. User enters 3 numbers. Double the first number, reduce second number by 3,
+square the third number and then the sum of the new three numbers.
+
+7. User enters 3 numbers. Find average if these numbers and the difference between the doubled sum of first and third numbers and the tripple second number.
+
+8. User enters  side of square. Find perimeter and area of the square
+
+9. User enters price of one kilo of candies and 1kg of cookies. Find price of 300 grams candies and 400 grams cookies. Find price of 2kg cookies and 1.8kg of candies.  
+---
+
 ### Arithmetic exercies solutions
 
 1.
@@ -225,4 +237,36 @@ int a = int.Parse(aInput);
 
 double result = (Math.Abs(a - 5) - Math.Sin(a))/3 + Math.Sqrt(Math.Pow(a, 2) + 2014) *  Math.Cos(2 * a) - 3; 
 Console.WriteLine("Answer = " + result);
+```
+
+4.
+
+```csharp
+Console.WriteLine("Write number");
+string aInput = Console.ReadLine();
+
+
+
+int a = int.Parse(aInput);
+
+double result = Math.Exp(a - 2) + Math.Abs(Math.Sin(a)) - Math.Pow(a, 4) * Math.Cos(1 / a);
+Console.WriteLine("Answer = " + result);
+```
+
+5.
+
+```csharp
+Console.WriteLine("Write 1st number ");
+string aInput = Console.ReadLine();
+Console.WriteLine("Write 2nd number ");
+string bInput = Console.ReadLine();
+
+int a = int.Parse(aInput);
+int b = int.Parse(bInput);
+
+
+int sum = a + b;
+int prod = a * b;
+Console.WriteLine(a + " + "+ b + " = "+ sum);
+Console.WriteLine(a + " * " + b + " = " + prod);
 ```
