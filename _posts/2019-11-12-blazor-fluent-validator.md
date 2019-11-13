@@ -207,4 +207,4 @@ That's all you need for using FluentValidaiton in blazor app.
 
 Blazor supports default data anotations validation. However, if you use FluentValidaiton library you still can reuse your validations rules in frontend. As we can see, it is pretty easy to implement.
 
-[**Example source code**]([https://github.com/nightBaker/examples/tree/master/examples/FluentValidationExample](https://github.com/nightBaker/examples/tree/master/examples/FluentValidationExample)
+[**Example source code**](https://github.com/nightBaker/examples/tree/master/examples/FluentValidationExample)
