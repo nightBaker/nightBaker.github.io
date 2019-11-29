@@ -8,7 +8,7 @@ categories: blazor fluetValidator webassembly dotnet
 
 ## Fluent Validation
 
-[Fluent validation]([https://fluentvalidation.net/](https://fluentvalidation.net/) is a popular library for validation using strongly typed rules written in code. 
+[Fluent validation](https://fluentvalidation.net/) is a popular library for validation using strongly typed rules written in code. 
 
 ## Prerequisites
 
