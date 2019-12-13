@@ -28,8 +28,8 @@ And the most excited thing that it has free option to host your app.
 4. Connect your app to github repo for enabling deploy
 5. Also you can enable automatic deploy 
 
-![]({{ "\images\heroku-blazor\create-app-1.gif" | absolute_url }})
-![]({{ "\images\heroku-blazor\create-app-2.gif" | absolute_url }})
+![]({{ "/images/heroku-blazor/create-app-1.gif" | absolute_url }})
+![]({{ "/images/heroku-blazor/create-app-2.gif" | absolute_url }})
 
 After these steps you have ability to deploy project manualy, however it will not work yet.
 
@@ -38,7 +38,7 @@ After these steps you have ability to deploy project manualy, however it will no
 Unfoturnately, heroku by default does not support .net apps. So we have to add third party buildpacks for enabling .net apps suport. 
 Don't worry, it is pretty easy.
 
-![]({{ "\images\heroku-blazor\add-buildpack.gif" | absolute_url }})
+![]({{ "/images/heroku-blazor/add-buildpack.gif" | absolute_url }})
 
 1. You can find Heroku .Net Core Buildpack [here](https://github.com/jincod/dotnetcore-buildpack)
 2. Go to your app on heroku **setting** tab
@@ -52,7 +52,7 @@ Now heroku knows how to build your app. However, we still are not ready to deplo
 
 If we would try to deploy our app we got some errors while building. Because buildpack automatically detect project for publishing by looking first Startup.cs file in solution. If we created blazor app hosted on asp.net core , we will have 2 web projects in solution and we must specify `PROJECT_FILE` in environment variables.
 
-![]({{ "(\images\heroku-blazor\project-file.gif" | absolute_url }})
+![]({{ "/images/heroku-blazor/project-file.gif" | absolute_url }})
 
 
 1. Go to `settings` page
