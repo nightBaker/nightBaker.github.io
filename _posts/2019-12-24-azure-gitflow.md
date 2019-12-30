@@ -86,19 +86,14 @@ steps:
 
 Let's consider this pipeline in details.
 
-1. 
-
 ```yaml
 trigger:
   branches:
     include:    
     - devel  
-
 ```
 
 This part configures build trigger. Build pipeline runs when **devel** branch is updated. 
-
-2. 
 
 ```yaml
 variables:
@@ -111,8 +106,6 @@ variables:
 
 As you noticed, we use variables group with predefined `Major` and `Minor` variables. However, we have countable variable `patch`.
  Here we use [counter](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops#counter) function. It will be incremented every build while variable `Minor` stay the same, i.e. it will be reset after `Minor` is changed.
-
-3.
 
 ```yaml
 - task: DotNetCoreCLI@2
