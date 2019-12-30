@@ -9,6 +9,8 @@ categories: gitflow azure piplines
 ## Gitflow
 
 [**Gitflow**](https://docs.microsoft.com/en-us/azure/architecture/framework/devops/gitflow-branch-workflow) is git workflow, which dictates how to work with branches in large projects.  
+
+
 <IMG width="800" src="https://nvie.com/img/git-model%402x.png"/>
 
 ## Gitflow for nuget package development
@@ -85,6 +87,7 @@ steps:
 Let's consider this pipeline in details.
 
 1. 
+
 ```yaml
 trigger:
   branches:
