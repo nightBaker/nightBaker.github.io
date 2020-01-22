@@ -196,3 +196,5 @@ Here we suppose that `GetJsonAsync` method can throw any exception, so if it doe
 ### Conclusion
 
 Though, we don't have ability to create global error handler yet, we can create one component for error rendering and use it anywhere in subtree of components.
+
+You can found source code of that example [here](https://github.com/nightBaker/blazor_error_component).
