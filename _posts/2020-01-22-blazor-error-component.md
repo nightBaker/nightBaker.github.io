@@ -28,7 +28,7 @@ So as we can see, it just has one method for showing error message with title an
 
 Next step is modifying `MainLayout` as implementation of our `IErrorComponent` interface. 
 
-```html
+```csharp
 @using Components
 
 @inherits LayoutComponentBase
@@ -94,7 +94,7 @@ Firstly, we added next line of code
 
 It says that our layout implement our `IErrorComponent` interface, so it should have `ShowError` method. Which you can see in `@code` section.
 We also added alert part :
-```html
+```csharp
 @if (isErrorActive)
 {        
 <div class="alert alert-danger" role="alert">
@@ -110,7 +110,7 @@ which will show alert message if `isErrorActive` field is true.
 
 And last one, but the important one part is wrapping body with `CascadingValue` component
 
-```html
+```csharp
 <CascadingValue Value="this" Name="ErrorComponent">
     @Body
 </CascadingValue>
@@ -120,7 +120,7 @@ With cascading parameters we can pass the paramter to any of components in a sub
 
 So for example, we can easily use our component on `FetchData` page. Let's modify into next form :
 
-```html
+```csharp
 
 @page "/fetchdata"
 @inject HttpClient Http
