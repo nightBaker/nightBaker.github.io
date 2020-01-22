@@ -2,7 +2,7 @@
 layout: post
 title:  Blazor common error component 
 date:   2020-01-22
-summary:  Single component for showing erros on any page and component
+summary:  Single component for showing errors on any page and component
 categories: gitflow azure piplines 
 ---
 
