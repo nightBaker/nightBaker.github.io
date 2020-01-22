@@ -9,7 +9,7 @@ categories: gitflow azure piplines
 ### Problem
 
 Actually, on every page and in every component exception can be thrown and client should have ability to understand that's something goes wrong. 
-Unfortunately, there still is no global error handling mechanism in blazor to catch exceptions. So developers have to wrap all methods with `try catch` and show error information to user in every page and component. However, last part can be optimized and we can create single component which will show error information and can be accessed from any layer of components in our applicaiton tree.
+Unfortunately, there still is no global error handling mechanism in blazor to catch exceptions. So developers have to wrap all methods with `try catch` and show error information to user in every page and component. However, last part can be optimized and we can create single component which will show error information and can be accessed from any layer of components in our components tree.
 
 ### Solution
 
