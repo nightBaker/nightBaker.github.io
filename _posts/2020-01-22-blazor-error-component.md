@@ -195,4 +195,4 @@ Here we suppose that `GetJsonAsync` method can throw any exception, so if it doe
 
 ### Conclusion
 
-Though, we don't have ability to create global error handling yet, we can create one component for error rendering and use it anywhere in subtree of components.
+Though, we don't have ability to create global error handler yet, we can create one component for error rendering and use it anywhere in subtree of components.
