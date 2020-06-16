@@ -53,6 +53,7 @@ Our appsettings.json
 Note, we use name of connection string and database name as `{% raw %}{{Database_Name}}{% endraw %}`. It allows template to use it like a variable for replacing it during generating.
 
 Now we need to create DbContext
+
 ```csharp
 namespace ProjectTemplate.Api.Data
 {
@@ -69,17 +70,18 @@ namespace ProjectTemplate.Api.Data
     }
 }
 ```
+
 Startup.cs
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-    
+
     services.AddDbContext<DatabaseContext>(options =>
         options.UseNpgsql(Configuration.GetConnectionString("{% raw %}{{Database_Name}}{% endraw %}")));
 
-    
+
 }
 ```
 
@@ -158,12 +160,12 @@ Firstly, we have to create folder in the root of solution and name it `.template
   "symbols": { // this section allows to replace our variables with given value during generating project from template
     "db": { 
       "type": "parameter",
-	  "isRequired": "true",
+      "isRequired": "true",
       "datatype": "string",
       "replaces": "{% raw %}{{Database_Name}}{% endraw %}",
       "defaultValue": "MyGameStartupDB",
       "description": "The database name attached to this project."
-    }		
+    }        
   }
 }
 ```
@@ -233,4 +235,3 @@ If you want to install template from nuget package use following command
 ```console
 dotnet new -i <PATH_TO_NUPKG_FILE>
 ```
-
