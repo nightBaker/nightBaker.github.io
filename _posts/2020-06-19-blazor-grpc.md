@@ -222,7 +222,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
    
 Run application and press **F12** to check that we reduce requests size.
    
-[Source code you can find on github](https://github.com/nightBaker/BlazorGrpc/tree/master/BlazorGrpc/Shared/protos) 
+[Source code you can find on github](https://github.com/nightBaker/BlazorGrpc) 
    
 ## Conclusion
 
