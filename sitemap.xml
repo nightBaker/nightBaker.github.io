@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://nightbaker.github.io/</loc>
+  <lastmod>2020-06-19T11:53:24+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/about/</loc>
+  <lastmod>2020-06-19T11:53:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/contact/</loc>
+  <lastmod>2020-06-19T11:53:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/blazor/webassembly/dotnet/grpc/2020/06/19/blazor-grpc/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/blazor/heroku/webassembly/dotnet/postgresql/2020/06/16/heroku-db/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/gitflow/azure/piplines/2020/01/22/blazor-error-component/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/gitflow/azure/piplines/2019/12/24/azure-gitflow/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/blazor/heroku/webassembly/dotnet/2019/12/12/heroku-blazor/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/blazor/fluetvalidator/webassembly/dotnet/2019/11/12/blazor-fluent-validator/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/page2/</loc>
+  <lastmod>2020-06-19T11:53:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/blazor/dotnet/webassembly/debug/2019/11/07/blazor-debug/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/net/core/console/2019/10/31/learn-code/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/asp/net/core/blazor/razor/component/2019/10/22/blazor-component/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/asp/net/core/entity/framework/2019/10/12/ef-core/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/asp/net/core/mvc/view/partial/2019/10/04/asp-views/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/asp/net/core/mvc/routing/2019/09/26/asp-routing/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/page3/</loc>
+  <lastmod>2020-06-19T11:53:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/asp.net/core/mvc/2019/09/20/asp-empty/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/blazor/identityserver4/serverapp/2019/08/29/blazor-serverapp-identity-server-4/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/dotnet/template/api/2019/08/08/dotnet-custom-template/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/rancher/docker/kubernates/2019/08/07/rancher/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/spa/csharp/webassembly/2019/04/15/blazor/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/moq.net/,/.net/core,/tdd/2019/03/01/moq/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/page4/</loc>
+  <lastmod>2020-06-19T11:53:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/angular/7,/asp.net/core,/docker/2019/02/22/dockerfile/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/ef/core,/oauth,/asp.net/core/2019/02/18/oauth/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/ef/core,/fluent/api,/.net/core/2019/02/12/ef-core-array-property/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/pgp/cryptography/.net/core/2019/02/08/pgp-encryption/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/vs/code/extension/ssh/ftp/2017/05/26/vs-code-extns/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/js/serviceworker/2017/05/24/cache-future/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/page5/</loc>
+  <lastmod>2020-06-19T11:53:24+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/css/sticky/scroll/2017/05/16/css-stickyPosition/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://nightbaker.github.io/js/serviceworker/2017/05/14/dapper-postgres-jsonb/</loc>
+  <lastmod>2020-06-19T11:53:25+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>
