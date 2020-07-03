@@ -46,7 +46,7 @@ Let's rename our `Component1.razor` to `MyCompnent.razor`.
 Next step is creating blazor application and adding reference to our newly created razor class library.
  In `Pages/Index.razor` we can add using of our `MyComponent` as in following example
 
- ```html
+```html
  @page "/"
 
 <h1>Hello, world!</h1>
@@ -58,7 +58,7 @@ Welcome to your new app.
 <MyComponent>
 
 </MyComponent>
- ```
+```
 
  Don't forget add `@using MY.LIB` to `_Imports.razor`.
 
@@ -82,7 +82,7 @@ access to this resources yet. To enclude static assests we should use prefix `_c
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
     <link href="_content/MY.LIB/styles.css" rel="stylesheet" />
-    
+
 </head>
 <body>
     <app>Loading...</app>
@@ -90,7 +90,6 @@ access to this resources yet. To enclude static assests we should use prefix `_c
     <script src="_framework/blazor.webassembly.js"></script>    
 </body>
 </html>
-
 ```
 
 Run app and see we have styled message with background image
