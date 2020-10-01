@@ -18,7 +18,7 @@ At the time of writting, microsoft released new .NET 5 RC version which includes
 
 - Create blazor webassembly project from template in visual studio or using CLI
   
-  ![](C:\Users\Shalabaev_Y\AppData\Roaming\marktext\images\2020-09-23-16-13-33-image.png)
+![create blazor proj ](/images/blazor-virtualize-component/2020-09-23-16-13-33-image.png)
 
 ## Virtualize forecasts
 
